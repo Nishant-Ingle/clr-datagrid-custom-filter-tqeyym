@@ -1,0 +1,9 @@
+#my-nav {
+  width: 13vw;
+  height: 20vh;
+  background-color: white;
+}
+
+.link-active {
+  background-color: rgb(196, 196, 196);
+}
