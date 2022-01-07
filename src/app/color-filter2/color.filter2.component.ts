@@ -5,13 +5,13 @@ import { COLORS } from '../inventory/values';
 
 @Component({
   selector: 'color-filter2',
-  template: ` <span
-    *ngFor="let color of allColors"
+  template: `<div *ngFor="let color of allColors"
     class="color-square color-selectable"
+    id="custom-color-filter"
     (click)="toggleColor(color)"
     [style.backgroundColor]="color"
     [class.color-selected]="selectedColors[color]"
-  ></span>`,
+  ><div>`,
   styleUrls: ['./color.filter2.scss'],
 })
 export class ColorFilter2 implements ClrDatagridFilterInterface<User> {
@@ -47,5 +47,9 @@ export class ColorFilter2 implements ClrDatagridFilterInterface<User> {
 
   isActive(): boolean {
     return this.nbColors > 0;
+  }
+
+  getColorName(val): string {
+    return val;
   }
 }
