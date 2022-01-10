@@ -11,7 +11,6 @@ import { Inventory } from './inventory/inventory.provider';
 import { Subject, Observable } from 'rxjs';
 
 import { ClrDatagridFilterInterface } from '@clr/angular';
-import { ColorFilter2 } from './color-filter2/color.filter2.component';
 
 export class ColorFilter implements ClrDatagridFilterInterface<User> {
   public selectedColors: string[] = [];
@@ -49,7 +48,6 @@ export class StatusFilter implements ClrDatagridFilterInterface<User> {
 export class BasicDatagridComponent {
   users: User[];
   customColorFilter: ColorFilter;
-  colorFilter: ColorFilter2;
   customStatusFilter: StatusFilter;
   status: string;
 

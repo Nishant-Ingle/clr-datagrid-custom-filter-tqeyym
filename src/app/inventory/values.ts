@@ -59,10 +59,25 @@ export const COLORS: string[] = [
   'Black',
 ];
 
-export const STATUS: string[] = [
-  'Disc',
-  'Exp',
-];
+export const COLORS2 = {
+  Red: 'Red',
+  Orange: 'Orange',
+  Yellow: 'Yellow',
+  Green: 'Green',
+  Blue: 'Blue',
+  Indigo: 'Indigo',
+  Violet: 'Violet',
+  Purple: 'Purple',
+  Magenta: 'Magenta',
+  Cyan: 'Cyan',
+  Pink: 'Pink',
+  Brown: 'Brown',
+  White: 'White',
+  Gray: 'Gray',
+  Black: 'Black',
+};
+
+export const STATUS: string[] = ['Disc', 'Exp'];
 
 export const POKEMONS: Pokemon[] = [
   { number: 1, name: 'Bulbasaur' },

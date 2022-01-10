@@ -4,10 +4,6 @@
 // @import '../../../node_modules/@clr/ui/src/utils/variables/variables.color';
 // @import '../../../node_modules/@clr/ui/src/utils/variables/variables.global';
 
-.datagrid-nav {
-  column-count: 3;
-}
-
 .color-square {
   display: inline-block;
   vertical-align: bottom;
@@ -17,41 +13,13 @@
   border-radius: 4px;
 }
 
-.color-filter {
-  display: block;
-  width: 100px;
-}
-
-.color-selectable {
+.coloro-selectable {
   cursor: pointer;
   margin: 2px;
   opacity: 0.2;
 
   &:hover,
-  &.color-selected {
+  &.coloro-selected {
     opacity: 1;
   }
-}
-
-.lorem-ipsum {
-  width: 300px;
-}
-
-.username-list {
-  margin-bottom: 0;
-
-  .username:not(:last-child)::after {
-    content: ', ';
-  }
-  .username:last-child::after {
-    content: '.';
-  }
-}
-
-#vertical-scrolling {
-  height: 500px;
-}
-
-.conditional-datagrid {
-  height: 300px;
 }

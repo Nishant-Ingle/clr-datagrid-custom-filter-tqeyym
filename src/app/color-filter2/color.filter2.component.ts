@@ -1,7 +1,7 @@
 import { Component, EventEmitter } from '@angular/core';
 import { ClrDatagridFilterInterface } from '@clr/angular';
 import { User } from '../inventory/user.interface';
-import { COLORS } from '../inventory/values';
+import { COLORS2 } from '../inventory/values';
 
 @Component({
   selector: 'color-filter2',
@@ -9,7 +9,7 @@ import { COLORS } from '../inventory/values';
   styleUrls: ['./color.filter2.scss'],
 })
 export class ColorFilter2 implements ClrDatagridFilterInterface<User> {
-  allColors = COLORS;
+  allColors = Object.keys(COLORS2);
   selectedColors: { [color: string]: boolean } = {};
   nbColors = 0;
 
@@ -45,5 +45,11 @@ export class ColorFilter2 implements ClrDatagridFilterInterface<User> {
 
   getColorName(val): string {
     return val;
+  }
+
+  reset(): void {
+    this.selectedColors = {};
+    this.nbColors = 0;
+    this.changes.emit(true);
   }
 }
