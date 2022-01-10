@@ -1,0 +1,10 @@
+<div *ngFor="let color of allColors">
+<div
+  class="color-square color-selectable"
+  id="custom-color-filter"
+  (click)="toggleColor(color)"
+  [style.backgroundColor]="color"
+  [class.color-selected]="selectedColors[color]">
+</div>
+<span>{{ color }} </span>
+</div>
