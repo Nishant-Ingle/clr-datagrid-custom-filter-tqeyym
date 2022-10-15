@@ -3,11 +3,13 @@
  * This software is released under MIT license.
  * The full license information can be found in LICENSE in the root directory of this project.
  */
+// import on demand
 import { Pokemon } from './pokemon.interface';
 
 export const NOW = new Date().getTime();
 export const BEGINNING = new Date(2014, 0, 1).getTime();
 
+// TODO: Move to properties file
 export const NAMES: string[] = [
   'Nelson',
   'Graham',
